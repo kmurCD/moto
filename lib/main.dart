@@ -6,10 +6,12 @@ import 'package:motomoto/ui/pages/home/screens/welcomeOne_page.dart';
 import 'package:motomoto/ui/pages/home/screens/welcome_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,9 +19,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(),
         initialRoute: '/WelcomeOne',
         routes: {
-          '/WelcomeOne': (context) => WelcomeOnePage(),
-          '/WelcomeTwo': (context) => WelcomeTwoPage(),
-          '/WelcomeThree': (context) => WelcomeThreePage(),
+          '/WelcomeOne': (context) => const WelcomeOnePage(),
+          '/WelcomeTwo': (context) => const WelcomeTwoPage(),
+          '/WelcomeThree': (context) => const WelcomeThreePage(),
           '/Login': (context) => LoginPage(),
           '/register': (context) => RegisterPage(),
         });
