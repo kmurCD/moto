@@ -24,7 +24,7 @@ class _InputsMotoMotoState extends State<InputsMotoMoto> {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-          top: widget.mTextTop,
+          top: MediaQuery.of(context).size.height * widget.mTextTop,
           right: widget.mTextRight,
           left: widget.mTextLeft),
       child: Center(

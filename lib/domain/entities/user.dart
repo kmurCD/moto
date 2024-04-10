@@ -11,7 +11,7 @@ class User {
     this.lastname = '',
     required this.email,
     this.contact = '',
-    required this.password,
+    this.password= '',
     this.ref = '',
   });
 }

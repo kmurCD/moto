@@ -28,7 +28,7 @@ class ButtonsMotoMoto extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget iconWidget = nameicon.isNotEmpty
-        ? SvgPicture.asset('lib/assets/$nameicon.svg')
+        ? SvgPicture.asset('lib/assets/icons/$nameicon.svg')
         : const SizedBox();
 
     return InkWell(

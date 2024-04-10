@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BtnDashBoard extends StatefulWidget {
-  BtnDashBoard({super.key});
+  const BtnDashBoard({super.key});
 
   @override
   State<BtnDashBoard> createState() => _BtnDashBoardState();

@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:motomoto/domain/services/userservice.dart';
 import 'package:motomoto/ui/pages/products/widgets/btn_dashboard.dart';
 import 'package:motomoto/ui/pages/products/widgets/btn_products.dart';
 import 'package:motomoto/ui/pages/products/widgets/card_products.dart';
 import 'package:motomoto/ui/pages/products/widgets/icons_products.dart';
 
-class HomeProducts extends StatelessWidget {
-  const HomeProducts({super.key});
 
+class HomeProducts extends StatelessWidget {
+
+
+  const HomeProducts({super.key, required this.userId, required this.authToken});
+  final String userId;
+  final String authToken;
   @override
   Widget build(BuildContext context) {
-    final String img =
+    const String img =
         'https://s3-alpha-sig.figma.com/img/82f8/939a/f5813aa9ef697646cf0ca2de45e8ed2f?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bU68By8DPTjER7GmR4t~vQHK45-s1ZngDGZPu6kIP7EyBEiiH61oZAxHD4Rth20JH1GChlDkvOfsykv-owXxbyfA69RcWNNDet6ZAMxoO9h26YQIVET4PWRgPP78MiyXpFBRmCMWXzgDkBsWzCFGPgb2YeKbaqTQtl4Aqz~8rzZbn9mlavZlp25C9273ThH5gHXCRwqQw7Q~BKOuPWWnK9myk1ScdHKHivPaZwlBzJJ7efAroYBtm0K3xEwx3JkZw~6IiWPDk4sZrpqb44syOWM2Hc02IAnKVVQwN3fZunXCH5oV6xTgb6TXssFpYTLbWrx0RgLxmwykmoU0-BkETA__';
-    final String nameUser = 'Usuario';
-    final String img2 =
+    const String nameUser = 'Usuario';
+    const String img2 =
         'https://s3-alpha-sig.figma.com/img/b433/77ec/f7f2f3cfedb5e09269a49089ff26adca?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qL4R0BXYdEGg1xR~47UMFaNpejoM-07WJ~-mc5PHqbscxUdEGPDopxK3f-2CppIQcoOEqOBSzt-CmbOULGW9vjhnvf8Nw7vZU7SUF88GU-A1fHUDSwXRMqqEPDxD6i-B5aAbSYnTY6vQf2CWU5-H3QIaVZfS5~3AACPZip5~a1~Tx54FHs3i5x9tVI9pPCYmX1gY7Qbk~ab71lwC5fPMdKc3iPMV9Hz50DaCp4n~UZxgX68yv9ZOTndN720FX48soHCAbiFHCKfQd6K-yJLArGfnL1gLIq2IW5vjSp3OewDE8Ad-WvMs6gk-ZBr65cOOF0j4K1E7CoCdqVd4rWRcig__';
     return Scaffold(
         body: SafeArea(
@@ -24,14 +29,15 @@ class HomeProducts extends StatelessWidget {
                 Row(
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {obtenerUsuario(userId,authToken ,context);
+                        print("userId=${userId}");},
                       child: Container(
                         margin: const EdgeInsets.only(right: 180),
                         width: 100,
                         height: 100,
                         child: Transform.scale(
                           scale: 0.3,
-                          child:   BtnDashBoard(),
+                          child:   const BtnDashBoard(),
                         ),
                       ),
                     ),
@@ -65,9 +71,9 @@ class HomeProducts extends StatelessWidget {
                       children: [
                         Container(
                           alignment: Alignment.centerLeft,
-                          child: Text(
+                          child: const Text(
                             '!Hola $nameUser!',
-                            style: const TextStyle(
+                            style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 20),
                           ),
                         ),

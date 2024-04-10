@@ -4,7 +4,7 @@ import 'package:motomoto/domain/services/userservice.dart';
 import 'package:motomoto/ui/pages/account/widgets/buttons.dart';
 import 'package:motomoto/ui/pages/account/widgets/checkbox.dart';
 import 'package:motomoto/ui/pages/account/widgets/inputs.dart';
-import 'package:motomoto/ui/pages/home/widgets/background.dart';
+import 'package:motomoto/ui/pages/home/widgets/background_0.dart';
 
 class RegisterPage extends StatelessWidget {
   RegisterPage({super.key});
@@ -23,10 +23,7 @@ class RegisterPage extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
-          const BackgroundMotoMoto(
-            mtopBackground: 0.92,
-            warrow: 150,
-            harrow: 140,
+          const Background0(backgroundImage: 'background_1',
           ),
           //-----------Title----------//
           Column(

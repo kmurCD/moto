@@ -6,7 +6,7 @@ class CardProducts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String img =
+    const String img =
         'https://s3-alpha-sig.figma.com/img/e9f8/d41b/03e88aaa7db97c6b0fe0eaa6fb825ad4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B1OE-jyrvW5Q9Fphw3mQo1YGl8K1JWc5L-~ky8zCgiw4eYDPgRAbTvA3oDELJxCRD0Y1ShFEwH~XzCR5JDPsxawEOMDFrPx1ZazimAOe8faeY5U9Tlf4Con8iKGBDXcht6nnPNRWzggeV0m05-9rQPx8jhbYLImRn6mNzOTP99-ooQfwhb4Hj2Ksq~5ZgqOO6VLYfGFSbiqo31ufaRXR5JHhXyQeiFDS2BEF6XurIxe~kVwdSVxwPw-d-xsYLRdFHVXIgUfdDDVqHFGEHfwaNgi75FNyBKb6fI1lGWkZSnj5SaXoIqRWcLj67WdXRK4VN6iy57kNx6k-K27hyNNmug__';
     return Card(color: Colors.white,
       elevation: 5,shadowColor: const Color(0xff00304E),
