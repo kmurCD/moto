@@ -5,7 +5,7 @@ class WelcomeOnePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String backgroun_ini = 'lib/assets/images/background_ini.png';
+    const String backgrounIni = 'lib/assets/images/background_ini.png';
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: SafeArea(
@@ -18,7 +18,7 @@ class WelcomeOnePage extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage(backgroun_ini),
+                      image: AssetImage(backgrounIni),
                       fit: BoxFit.cover,
                       opacity: 0.5)),
             ),

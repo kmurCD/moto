@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:motomoto/domain/services/userservice.dart';
-import 'package:motomoto/ui/pages/products/widgets/btn_dashboard.dart';
-import 'package:motomoto/ui/pages/products/widgets/btn_products.dart';
-import 'package:motomoto/ui/pages/products/widgets/card_products.dart';
-import 'package:motomoto/ui/pages/products/widgets/icons_products.dart';
+import 'package:motomoto/ui/widgets/products/btn_dashboard.dart';
+import 'package:motomoto/ui/widgets/products/btn_products.dart';
+import 'package:motomoto/ui/widgets/products/card_products.dart';
+import 'package:motomoto/ui/widgets/products/icons_products.dart';
 
 
 class HomeProducts extends StatelessWidget {
@@ -30,7 +30,7 @@ class HomeProducts extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {obtenerUsuario(userId,authToken ,context);
-                        print("userId=${userId}");},
+                        print("userId=$userId");},
                       child: Container(
                         margin: const EdgeInsets.only(right: 180),
                         width: 100,

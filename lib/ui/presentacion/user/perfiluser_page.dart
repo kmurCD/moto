@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:motomoto/domain/entities/user.dart';
-import 'package:motomoto/ui/pages/user/widget/inputeditprofile.dart';
+import 'package:motomoto/ui/widgets/user/inputeditprofile.dart';
 
 class PerfilUserPage extends StatelessWidget {
   const PerfilUserPage({super.key, required this.user});

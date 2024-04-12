@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:motomoto/domain/entities/user.dart';
 import 'package:motomoto/domain/services/util/apigetuser.dart';
 import 'package:motomoto/domain/services/util/apiuserservice.dart';
-import 'package:motomoto/ui/pages/user/perfiluser_page.dart';
+import 'package:motomoto/ui/presentacion/user/perfiluser_page.dart';
 
 Future<void> registoUsuario(User user) async {
   try {

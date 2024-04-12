@@ -1,9 +1,8 @@
-import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiGetService {
   static Future<dynamic> getUser(String? id, String? authToken) async {
-    const String baseUrl = 'http://192.168.1.24:3000/v1/users/';
+    const String baseUrl = 'http://35.170.243.29:3000/v1/users/';
     final Uri url = Uri.parse(baseUrl + (id ?? ''));
     final Map<String, String> headers = {
       'Content-Type': 'application/json',

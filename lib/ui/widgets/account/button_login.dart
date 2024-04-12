@@ -27,6 +27,9 @@ class ButtonsMotoMoto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    double screenWidtch = MediaQuery.of(context).size.width;
+    double screenheight = MediaQuery.of(context).size.height;
     Widget iconWidget = nameicon.isNotEmpty
         ? SvgPicture.asset('lib/assets/icons/$nameicon.svg')
         : const SizedBox();
@@ -36,8 +39,8 @@ class ButtonsMotoMoto extends StatelessWidget {
         onPressed();
       },
       child: Container(
-        width: wbutton,
-        height: hbutton,
+        width: screenWidtch*wbutton,
+        height: screenheight*hbutton,
         decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
@@ -54,12 +57,14 @@ class ButtonsMotoMoto extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             iconWidget,
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                text,
-                style: TextStyle(
-                    color: mcolor, fontSize: fSize, fontFamily: 'Roboto'),
+            Container(alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Text(
+                  text,
+                  style: TextStyle(
+                      color: mcolor, fontSize: fSize, fontFamily: 'Roboto'),
+                ),
               ),
             ),
           ],

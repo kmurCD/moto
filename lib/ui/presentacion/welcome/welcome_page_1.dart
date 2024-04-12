@@ -1,10 +1,6 @@
-import 'dart:math';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:motomoto/ui/pages/home/widgets/background_1.dart';
-import 'package:motomoto/ui/pages/home/widgets/logo_motomoto.dart';
+import 'package:motomoto/ui/widgets/background_1.dart';
+import 'package:motomoto/ui/widgets/welcome/logo_motomoto.dart';
 
 class WelcomeTwoPage extends StatelessWidget {
   const WelcomeTwoPage({super.key});

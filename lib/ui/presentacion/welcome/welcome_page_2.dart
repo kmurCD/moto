@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:motomoto/ui/pages/account/widgets/buttons.dart';
-import 'package:motomoto/ui/pages/home/widgets/background_0.dart';
-import 'package:motomoto/ui/pages/home/widgets/tex_view_page.dart';
+import 'package:motomoto/ui/widgets/background_0.dart';
+import 'package:motomoto/ui/widgets/welcome/tex_view_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class WelcomeThreePage extends StatelessWidget {

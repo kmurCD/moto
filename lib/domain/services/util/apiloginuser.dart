@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:motomoto/domain/entities/user.dart';
 
-final url = Uri.parse('http://192.168.1.24:3000/v1/auth/login');
+final url = Uri.parse('http://35.170.243.29:3000/v1/auth/login');
 final headers = {"Content-Type": "application/json;charset=UTF-8"};
 
 class ApiLoginService {
@@ -14,9 +14,7 @@ class ApiLoginService {
     };
     final response =
         await http.post(url, headers: headers, body: jsonEncode(user));
-    print("cuerpo:${response.body}");
-    print("estado=${response.statusCode}");
-
+    print(response);
     return response;
   }
 }

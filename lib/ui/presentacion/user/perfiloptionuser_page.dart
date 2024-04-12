@@ -6,7 +6,7 @@ class PerfilOptionUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: Container(
-      color: Color(0xff00304E),
+      color: const Color(0xff00304E),
       height: 360,
     ),);
   }

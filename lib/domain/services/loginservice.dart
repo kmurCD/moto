@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:motomoto/domain/entities/AuthProvider.dart';
 import 'package:motomoto/domain/entities/user.dart';
-import 'package:motomoto/ui/pages/products/homeproducts.dart';
+import 'package:motomoto/ui/presentacion/products/homeproducts.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'util/apiloginuser.dart';
@@ -32,8 +32,8 @@ Future<void> loginUsuario(User user, BuildContext context) async {
                   userId: userId,
                 )),
       );
-      print('token= ${authToken}');
-      print("id_user= ${userId}");
+      print('token= $authToken');
+      print("id_user= $userId");
     } else {
       ('Error en la solicitud: ${response.statusCode}');
     }
